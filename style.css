@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
+    font-family: 'Satisfy';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    background: url(https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_1280.jpg);
+    /* background: url(https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_1280.jpg); */
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center center;
+    height: 60px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.container div {
+    margin-top: 10px;
+}
+
+.height {
+    transition: all 0.5s;
+    height: 400px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-box input {
+    font-size: 1.6rem;
+    padding: 2px 5px 2px 15px;
+    margin-left: 5px;
+    width: 60%;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border: 3px solid rgb(255, 254, 254);
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 5px black,
+        0 0 10px black;
+
+}
+
+.search-box input::placeholder {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.fa-solid {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.search-box button {
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.search-box button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px black;
+}
+
+.temperature {
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.temperature h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+#condition {
+    font-weight: bold;
+    color: rgb(0, 225, 250);
+    font-size: 3rem;
+    text-shadow: 0 0 5px black;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image {
+    filter: drop-shadow(0 0 10px black);
+    width: 120px;
+}
+
+.other {
+    display: none;
+    justify-content: space-around;
+}
+
+#windSpeed,
+#humidity {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.error {
+    text-align: center;
+    display: none;
+}
+
+.error img {
+    width: 100%;
+    display: inline-block;
+}
+
+.error p {
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-shadow: 0 0 5px black;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.credit {
+    position: absolute;
+    top: 10px;
+    color: #51ff00;
+    font-size: 100%;
+    width: 70%;
+    text-align: center;
+    text-shadow: 0 0 5px #51ff00,
+        0 0 10px #51ff00;
+}
+
+.social-icons {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+}
+
+.icons {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icons::before {
+    content: "";
+    position: absolute;
+    height: 3.4rem;
+    width: 3.4rem;
+    border: 3px solid black;
+    top: -6px;
+    left: -5.5px;
+    border-radius: inherit;
+}
+
+.fa-brands {
+    color: rgb(255, 255, 255);
+    font-size: 1.9rem;
+}
+
+.icons:hover .fa-brands {
+    animation: shake 0.2s alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+#ig {
+    background-image: linear-gradient(to top, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}

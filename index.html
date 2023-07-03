@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9153f1b16d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="credit">
+        <h1>Designed by: Sahil Kumar</h1>
+    </div>
+    <div class="social-icons">
+        <div class="icons" id="ig">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="icons" style="background-color: rgb(0, 140, 255);">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="icons" style="background-color: rgb(48, 12, 249);">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="icons" style="background-color: rgb(0, 255, 0);">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="icons" style="background-color: rgb(0, 72, 255);">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <div class="container " id="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="place" placeholder=" Enter Your Location" value="">
+            <button class="fa-solid fa-magnifying-glass" onclick="getvalue()"></button>
+        </div>
+        <div class="error" id="error">
+            <img src="/pngegg (3).png" alt="">
+            <p>Invalid Location!!!</p>
+        </div>
+        <div class="temperature">
+            <h1><span id="temp" style="font-size: 3.5rem; font-weight: bold;"></span></h1>
+        </div>
+        <div id="condition" style="text-align: center;"></div>
+        <div class="image">
+            <img src="" alt="" id="image">
+        </div>
+        <div class="other" id="other">
+            <div class="wind"><i class="fa-solid fa-wind"></i><span id="windSpeed"></span></div>
+            <div class="humidity"><i class="fa-solid fa-water"></i><span id="humidity"></span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
